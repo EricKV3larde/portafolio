@@ -1,0 +1,519 @@
+/* Principal */
+
+  @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap');
+/* 
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+p{
+    line-height: 2em;
+    color: rgb(55, 55, 55);
+    font-family: 'Roboto', sans-serif;
+}
+/* transicionse  */
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* barra de navegacion */
+
+nav, .links {
+    display: flex;
+    backdrop-filter: blur(1px);
+    pointer-events: none;
+}
+
+nav{
+   justify-content: space-around;
+   align-items: center;
+   height: 17vh; 
+   backdrop-filter: blur(1px);
+   pointer-events: none;
+}
+.links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    backdrop-filter: blur(1px);
+    pointer-events: none;
+    pointer-events: all;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color:rgb(255, 255, 255);
+
+}
+a:hover{
+    color: rgb(182, 178, 178);
+    text-decoration: underline;
+    text-underline-offset: .6rem;
+    text-decoration-color:rgb(220, 220, 220) ;
+}
+
+.nombre{
+    font-size: 5rem;
+}
+/* para que no cambie el estilo del curos al  */
+.nombre:hover{
+    cursor: default;
+}
+
+/* para movil */
+#movil{
+    display: none;
+}
+
+.movilNav{
+    position: relative;
+    display: inline-block;
+}
+
+.movilIcono{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25px;
+    width: 30px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.movilIcono span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all .3 ease-in-out;
+    pointer-events: all;
+}
+
+.movilLinks{
+    top: 100%;
+    position: absolute;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3 ease-in-out;
+}
+
+
+.movilLinks a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all .3 ease-in-out;
+    pointer-events: all;
+}
+
+.movilLinks li{
+    list-style: none;
+}
+
+.movilLinks.open{
+    max-height: 300px;
+}
+.movilIcono.open span:first-child{
+    transform: rotate(45deg) translate(10px, 6px);
+}
+
+.movilIcono.open span:nth-child(2){
+    opacity: 0;
+}
+
+.movilIcono.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -6px);
+}
+
+.movilIcono span:first-child{
+    transform: none;
+}
+
+.movilIcono span:first-child{
+    opacity: 1;
+}
+
+.movilIcono span:first-child{
+    transform: none;
+}
+
+/*  */
+
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+
+.section-container{
+    display: flex;
+}
+/* perfi */
+
+
+#perfil{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+    backdrop-filter: blur(1px);
+    pointer-events: none;
+
+    
+}
+
+.foto{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+.textoPersonal{
+    align-self: center;
+    text-align: center;
+    padding: 1rem;
+    /* background-color: #ffffff94;
+    border: #000000 .1rem solid;
+    border-radius: 2rem; */
+    
+}
+/* esto es parte de un cv expeciifcamente la experiencia y los proyectos,  bien ahora a partir de ese ejemplo crearemos el mio, para eso debes tener en cuenta los verbos de accion y la estructura en la que esta organizado el texto.  */
+.textoPersonal p{
+    font-weight: 700;
+}
+
+.textoPersonal_p1{
+    text-align: center;
+}
+.textoPersonal_p1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.textoPersonal_p2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.title{
+    font-size: 6rem;
+    text-align: center;
+}
+
+#redes{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    pointer-events: all;
+}
+
+/* iconos redes sciales  */
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* Botones */
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    pointer-events: all;
+}
+
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    pointer-events: all;
+}
+
+.btn-color-1, .btn-color-2{
+    border:rgb(0, 0, 0), solid 4px;
+} 
+.btn-color-1:hover, .btn-color-2:hover{
+    cursor: pointer;
+} 
+.btn-color-1, .btn-color-2:hover{
+    background-color: rgb(63, 63, 63);
+    color: rgb(255, 255, 255);
+} 
+
+.btn-color-1:hover{
+    background: black;
+}
+
+
+/* aboutMe */
+
+#aboutMe{
+    position: relative;
+
+}
+
+.section-container{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.section-container-txt{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutMe-container, .section-container-txt{
+    display: flex;
+}
+
+.img-aboutMe{
+    border-radius: 2rem;
+}
+
+.arrowDown {
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    bottom: 2rem;
+    left: 50%; /* Establece la posición horizontal al centro */
+    transform: translateX(-50%); /* Translada el elemento hacia la izquierda en un 50% de su propio ancho */
+  }
+
+.detalles-container{
+    padding: 1.5rem;
+    margin: 1rem;
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    border: rgb(135, 112, 159) .1rem solid;
+    border-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.section-container{
+    gap: 4rem;
+    height: 80%;
+}
+
+.section-container-img{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+/* experioenica */
+
+#experiencia{
+    position: relative;
+}
+.experiencia-subtitulo{
+    color: gray;
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+.tecnologias-container{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+article{
+    width: 10rem;
+    justify-content: space-around;
+    gap: .5rem;
+}
+
+article .icon{
+    cursor: default;
+}
+
+/* proyectos */
+
+#proyectos{
+    position: relative;
+}
+
+.color-container{
+    border-color: rgb(0, 0, 0);
+    background: rgba(207, 207, 207, 0.274);
+}
+
+.img-proyecto{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.titulo-proyecto{
+    margin: 1rem;
+    color: black;
+}
+
+.btn-proyecto{
+    color: black;
+    border-color: gray;
+}
+
+
+.proyectoss-container{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+
+/* contacto */
+
+#contacto{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contacto-container-grande{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    border-radius: 2rem;
+    border: .1rem solid;
+    border-color: rgb(0, 0, 0);
+    background-color: rgba(226, 226, 226, 0.594);
+    margin: 2rem auto;
+    padding: 1rem 5rem; /* Modificado para ajustar el espacio */
+}
+
+.contacto-informacion-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: 1rem;
+}
+
+.correo-info{
+    grid-column: 1/ span 2;
+}
+
+.contacto-informacion-container p{
+    font-size: large;
+}
+
+.contacto-icono{
+    cursor: default;
+}
+
+/* footer */
+
+footer{
+    height: 26vh;
+    margin: 0 1.5rem;
+
+}
+
+footer p{
+    text-align: center;
+}
+
+/* --- */
+.bgAnimacion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    background: #ffffff;
+    filter: saturate(2);
+    overflow: hidden;
+}
+.colorBox{
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 2s ease;
+    position: relative;
+    margin: 2px;
+    background: #ffffff;
+}
+
+.colorBox:hover{
+    background: #a3a3a3;
+    transition-duration: 0s;
+}
+.backgroundUwu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #000000;
+    filter: blur(60px);
+    animation: animBack 6s linear infinite;
+}
+
+@keyframes animBack {
+    0%{
+        top: -60px;
+    }
+    100%{
+        top: 120%;
+    }
+}
+/* --- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

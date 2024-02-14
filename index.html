@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Erick Velarde</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <div class="bgAnimacion" id="bgAnimacion">
+      <div class="backgroundUwu">
+
+      </div>
+    </div>
+    
+
+    <nav id="navegador">
+      <div class="nombre">Erick Velarde</div>
+      <div>
+        <ul class="links">
+          <li><a href="#aboutMe">Acerca de mi</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contáctame</a></li>
+          <!-- añadir funcionalidad de copia de correo electronico -->
+        </ul>
+      </div>
+    </nav>
+    <nav id="movil">
+      <div class="nombre">Erick Velarde</div>
+      <div class="movilNav">
+        <div class="movilIcono" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="movilLinks">
+          <li><a href="#aboutMe" onclick="toggleMenu()">Acerca de mi</a></li>
+          <li><a href="#experiencia" onclick="toggleMenu()">Experiencia</a></li>
+          <li><a href="#proyectos" onclick="toggleMenu()">Proyectos</a></li>
+          <li><a href="#contacto" onclick="toggleMenu()">Contáctame</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="perfil">
+      <div class="foto">
+        <img src="" alt="Erick Velarde Foto" />
+        <!-- al final -->
+      </div>
+      <div class="textoPersonal">
+        <p class="textoPersonal_p1">Buenas, Soy</p>
+        <h1 class="title">Erick Velarde</h1>
+        <p class="textoPersonal_p2">Desarrollador Frontend</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/asef.cv.pdf')"
+          >
+            Descarga mi CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.open ='./#contacto'"
+          >
+            Contáctame
+          </button>
+        </div>
+        <div id="redes">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/erickvelarde/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Github"
+            class="icon"
+            onclick="location.href='https://github.com/EricKV3larde'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="aboutMe">
+      <p class="textoPersonal_p1">Conoce aún más</p>
+      <h1 class="title">Acerca de Mí</h1>
+      <div class="section-container">
+        <div class="section-container-img">
+          <img
+            src="./assets/sobremi.jpg"
+            alt="Sobre Mi Imagen"
+            class="img-aboutMe"
+          />
+        </div>
+        <div class="section-container-txt">
+          <div class="aboutMe-container">
+            <div class="detalles-container">
+              <img
+                src="./assets/lupa.svg"
+                alt=""
+                class="Erick Velarde Foto"
+                class="icon"
+              />
+              <h3>Experiencia</h3>
+              <p>
+                - <br />
+                ---------- <br />
+                ------------------------------
+              </p>
+            </div>
+            <div class="detalles-container">
+              <img
+                src="./assets/lupa.svg"
+                alt=""
+                class="Erick Velarde Foto"
+                class="icon"
+              />
+              <h3>Educación</h3>
+              <p>
+                - <br />
+                7mo Semestre <br />Estudiante de Ingeniería de Sistemas
+              </p>
+            </div>
+          </div>
+          <div class="texto-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              quibusdam tempora modi ex, cumque culpa maxime rerum fugiat
+              consequatur ad cum numquam alias reprehenderit aut expedita a rem
+              incidunt temporibus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/flecha.png"
+        alt="flechaAbajo"
+        class="icon arrowDown"
+        onclick="location.href='./#experiencia'"
+      />
+    </section>
+    <section id="experiencia">
+      <p class="textoPersonal_p1">Mira Mí</p>
+      <h1 class="title">Experiencia</h1>
+      <div class="experiencia-container">
+        <div class="detalles-container">
+          <h2 class="experiencia-subtitulo">Frontend</h2>
+          <div class="tecnologias-container">
+            <article>
+              <img src="./assets/check.png" alt="check" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Intermedio</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/check.png" alt="check" class="icon" />
+              <div>
+                <h3>Typescript</h3>
+                <p>Aprendiendo</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/check.png" alt="check" class="icon" />
+              <div>
+                <h3>Javascript</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/check.png" alt="check" class="icon" />
+              <div>
+                <h3>React</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/check.png" alt="check" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="detalles-container">
+          <h2 class="experiencia-subtitulo">Backend</h2>
+          <div class="tecnologias-container">
+            <article>
+              <img src="./assets/check.png" alt="check" class="icon" />
+              <div>
+                <h3>SQL</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/check.png" alt="check" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/check.png" alt="check" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="assets/flecha.png"
+        alt="flechaAbajo"
+        class="icon arrowDown"
+        onclick="location.href='./#proyectos'"
+      />
+    </section>
+    <section id="proyectos">
+      <p class="textoPersonal_p1">Revisa algunos de mis</p>
+      <h1 class="title">Proyectos</h1>
+      <div class="experiencia-container">
+        <div class="proyectoss-container">
+          <div class="detalles-container color-container">
+            <div class="proyecto-container">
+              <img src="wsefsf" alt="img-proyecto" class="img-proyecto" />
+            </div>
+            <h2 class="experiencia-subtitulo titulo-proyecto">
+              Proyecto Nro 1
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 btn-proyecto"
+                onclick="location.href='https://github.com/EricKV3larde/tienda-pizza'"
+              >
+                Ver Codigo
+              </button>
+              <button
+                class="btn btn-color-2 btn-proyecto"
+                onclick="location.href='https://erickv3larde.github.io/tienda-pizza/'"
+              >
+                Ver Web
+              </button>
+            </div>
+          </div>
+          <div class="detalles-container color-container">
+            <div class="proyecto-container">
+              <img src="wsefsf" alt="img-proyecto" class="img-proyecto" />
+            </div>
+            <h2 class="experiencia-subtitulo titulo-proyecto">
+              Proyecto Nro 2
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 btn-proyecto"
+                onclick="location.href='https://github.com/EricKV3larde/tienda-pizza'"
+              >
+                Ver Codigo
+              </button>
+              <button
+                class="btn btn-color-2 btn-proyecto"
+                onclick="location.href='https://erickv3larde.github.io/tienda-pizza/'"
+              >
+                Ver Web
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/flecha.png"
+        alt="flechaAbajo"
+        class="icon arrowDown"
+        onclick="location.href='./#contacto'"
+      />
+    </section>
+    <section id="contacto">
+      <p class="textoPersonal_p1">Te dejo mi</p>
+      <h1 class="title">Contacto</h1>
+      <div class="contacto-container-grande">
+        <div class="contacto-informacion-container correo-info">
+          <img
+            src="./assets/gmail.png"
+            alt="email"
+            class="icon contacto-icono"
+          />
+          <p>
+            <a href="santhiago200424@gmail.com">santhiago200424@gmail.com</a>
+          </p>
+          <button class="btn btn-color-2 btn-footer" id="copiarEmail">Copiar correo</button>
+          <!-- añadir funcionalidad para que se pueda cipiar el correo  -->
+        </div>
+        <div class="contacto-informacion-container">
+          <img
+            src="./assets/logo (2).png"
+            alt="github"
+            class="icon contacto-icono"
+          />
+          <p><a href="https://github.com/EricKV3larde">github</a></p>
+          <!-- añadir funcionalidad para que se pueda cipiar el correo  -->
+        </div>
+        <div class="contacto-informacion-container">
+          <img
+            src="./assets/linkedin (1).png"
+            alt="linkedin"
+            class="icon contacto-icono"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/erickvelarde/">linkedin</a>
+          </p>
+          <!-- añadir funcionalidad para que se pueda cipiar el correo  -->
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="links-container">
+          <ul class="links">
+            <li><a href="#aboutMe">Acerca de mi</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contáctame</a></li>
+            <!-- añadir funcionalidad de copia de correo electronico -->
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright © Erick Velarde - 2024. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

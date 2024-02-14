@@ -1,0 +1,88 @@
+@media screen and (max-width: 1400px) {
+    #perfil{
+        height: 80vh;
+        margin-bottom: 16rem;
+    }
+    .aboutMe-container{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    body{
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    #navegador{
+        display: none;
+    }
+    #movil{
+        display: flex;
+    }
+    #experiencia, .experiencia-container{
+        margin-top: 2rem;
+    }
+    #perfil, .textoPersonal{
+        display: block;
+    }
+    
+    .arrowDown{
+        display: none;
+    }
+    
+    section, .section-container{
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+    .texto-container{
+        text-align: center;
+    }
+    section{
+        margin: .5%;
+    }
+    .section-container-img{
+        width: 275px;
+        height: 275px;
+        margin: 0px auto 2rem;
+    }
+    .aboutMe-container{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contacto{
+        display: unset;
+    }
+    #contacto, footer{
+        height: 40vh;
+    }
+    #perfil{
+        height: 80vh;
+        margin-bottom: 16rem;
+    }
+    article{
+        font-size: 1rem;
+    }
+    footer nav{
+        height: fit-content;
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+    }
+
+    .aboutMe-container, .contacto-container-grande, .btn-container{
+        flex-wrap: wrap;
+    }
+    .contacto-informacion-container{
+        margin: 0;
+    }
+    .contacto-informacion-container p, .links li a{
+        font-size: 1rem;
+    }
+    .links{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
