@@ -561,7 +561,7 @@ footer p{
   
 .overlay p {
     padding:10px;
-    padding-top: 5rem;
+    padding-top: 1vh;
     font-weight: bold;
     color: #000000;
 }
