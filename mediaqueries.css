@@ -12,8 +12,7 @@
 
 @media screen and (max-width: 1200px) {
     body{
-        margin-left: 2rem;
-        margin-top: 2rem;
+        margin: 2rem;
     }
     #navegador{
         display: none;
@@ -27,11 +26,14 @@
     #perfil, .textoPersonal{
         display: block;
     }
-    
+
     .arrowDown{
         display: none;
     }
-    
+    .nombre{
+        padding: 1.7rem;
+        font-size: 4rem;
+    }
     section, .section-container{
         height: fit-content;
         flex-wrap: wrap;
@@ -44,11 +46,22 @@
     }
     .section-container-img{
         width: 275px;
-        height: 275px;
-        margin: 0px auto 2rem;
+        height: 120px;
+        margin: 0px auto;
     }
     .aboutMe-container{
         margin-top: 0;
+    }
+
+    .foto{
+        margin: 10vh auto;
+    }
+    .section-container-img{
+        align-items: center;
+    }
+    .section-container-img .img-aboutMe{
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -63,6 +76,7 @@
         height: 80vh;
         margin-bottom: 16rem;
     }
+
     article{
         font-size: 1rem;
     }
@@ -84,5 +98,10 @@
     .links{
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .section-container-img{
+        width: 275px;
+        height: 120px;
+        margin: 0px auto;
     }
 }
